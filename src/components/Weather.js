@@ -8,9 +8,12 @@ const Weather = props => {
           <div>
             <span className="h3">{props.city}</span>
             <sup className="small"> [{props.region + ' ' + props.country}]</sup>
-            <img src={props.conditionIcon} alt="weather icon" />
-            {props.temperature} &deg;C
-            <p>[{props.conditionText}]</p>
+            <div>
+              <div>
+                <img src={props.conditionIcon} alt="weather icon" />
+                {props.conditionText}
+              </div>
+            </div>
           </div>
         ) : null}
         <div />
